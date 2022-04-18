@@ -1,0 +1,115 @@
+.mainSection {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.counterSection {
+    background-color: #9fbeb6;
+    text-align: center !important;
+    padding: 2em 0.1em !important;
+    border-radius: 2em;
+}
+
+.counterNumber {
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.appTitle {
+    text-align: center;
+}
+
+.icon {
+    color: #ffffff;
+}
+
+.subtitleMsg {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.optionButton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.optionButton button {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    background-color: #9fbeb6;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AppBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(220, 220, 220, 0.4);
+}
+
+@media (max-width: 775px) {
+    .counterNumber {
+        font-size: 3em;
+    }
+    .subtitleMsg {
+        font-size: 0.9em;
+    }
+    .optionButton button {
+        width: 150px;
+        height: 50px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    .icon {
+        font-size: 15px;
+    }
+    .appTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 550px) {
+    .counterNumber {
+        font-size: 2em;
+    }
+    .subtitleMsg {
+        font-size: 0.6em;
+    }
+    .optionButton button {
+        width: 150px;
+        height: 50px;
+        margin: 10px;
+        font-size: 12px;
+    }
+    .icon {
+        font-size: 12px;
+    }
+    .appTitle {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 400px) {
+    .counterNumber {
+        font-size: 1.8em;
+    }
+    .subtitleMsg {
+        font-size: 0.5em;
+    }
+    .optionButton button {
+        width: 150px;
+        height: 50px;
+        margin: 10px;
+        font-size: 10px;
+    }
+    .icon {
+        font-size: 10px;
+    }
+    .appTitle {
+        font-size: 1em;
+    }
+}

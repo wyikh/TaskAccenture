@@ -1,0 +1,198 @@
+td,
+th {
+    border: 1px solid #dddddd !important;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.4);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s;
+}
+
+.modalBackground {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 500px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalListContainer {
+    width: 500px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3em;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .footer {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #9fbeb6;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.errMsg {
+    color: crimson;
+}
+
+@media (max-width: 775px) {
+    .title h3 {
+        font-size: 20px !important;
+    }
+    td,
+    th {
+        font-size: 12px;
+    }
+    .modalContainer {
+        width: 400px;
+        height: 350px;
+        padding: 20px;
+    }
+    .modalListContainer {
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+    }
+    .modalContainer .title {
+        font-size: 0.5em;
+    }
+    .titleCloseBtn button {
+        font-size: 20px;
+    }
+    .modalContainer .footer button {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .title h3 {
+        font-size: 15px !important;
+    }
+    td,
+    th {
+        font-size: 12px;
+    }
+    .modalContainer {
+        width: 350px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .modalListContainer {
+        width: 400px;
+        height: 450px;
+        padding: 18px;
+    }
+    .modalContainer .title {
+        font-size: 0.5em;
+    }
+    .titleCloseBtn button {
+        font-size: 15px;
+    }
+
+    .modalContainer .footer {
+        margin-top: 1.6em;
+    }
+    .modalContainer .footer button {
+        width: 85px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .title h3 {
+        font-size: 12px !important;
+    }
+    td,
+    th {
+        font-size: 10px;
+    }
+    .modalContainer {
+        width: 300px;
+        height: 250px;
+        padding: 15px;
+    }
+    .modalListContainer {
+        width: 350px;
+        height: 400px;
+        padding: 20px;
+    }
+    .modalContainer .title {
+        font-size: 0.4em;
+    }
+    .titleCloseBtn button {
+        font-size: 15px;
+    }
+
+    .modalContainer .footer {
+        margin-top: 1.4em;
+    }
+    .modalContainer .footer button {
+        width: 75px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
